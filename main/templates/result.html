@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>result</title>
+    </head>
+    <body>
+               <ul>
+           <li>HTML
+               <ol>
+                  <li>태그</li>
+                  <li>요소</li>
+                  <li>속성</li>
+                  <li>기타</li>
+               </ol>
+           </li>
+           <hr />
+           <li>JAVA
+               <ol type="I">
+                  <li>변수</li>
+                  <li>자료형</li>
+                  <li>제어문</li>
+                  <li>배열</li>
+                  <li>메소드</li>
+               </ol>
+           </li>
+           <hr />
+           <li>tensorflow
+               <ol type="1">
+                   {% for i in data %}
+                   <li>{{ i }}</li>
+                   {% endfor %}
+               </ol>
+           </li>
+       </ul>
+    </body>
+    {% for i in list %}
+        {{ i }}
+    {% endfor %}
+</html>

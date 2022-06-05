@@ -7,3 +7,4 @@ def index(request):
 def greet(request):
     user_name = request.GET['name']
     return render(request, "greet.html", {'name': user_name}) # greet.html 렌더링
+
