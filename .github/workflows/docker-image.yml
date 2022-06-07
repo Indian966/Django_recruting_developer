@@ -29,6 +29,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: seungkyua/tks-contract:latest
+        tags: indokim966/django_project:latest
       
       
