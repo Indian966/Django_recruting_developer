@@ -1,0 +1,10 @@
+version: "0"
+
+services:
+  django_test:
+    build: .
+    command: python manage.py runserver 0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/django_test
