@@ -8,3 +8,6 @@ def greet(request):
     user_name = request.GET['name']
     return render(request, "greet.html", {'name': user_name}) # greet.html 렌더링
 
+def data_view(request) :
+    user_name = request.GET['name']
+    return render(request, 'data_view.html', {'name' : user_name})

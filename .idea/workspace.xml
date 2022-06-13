@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="result_view.py&#10;result.html&#10;새로운 페이지 추가">
+    <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main/templates/data_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -81,7 +83,8 @@
       <workItem from="1654420943159" duration="4004000" />
       <workItem from="1654491340259" duration="596000" />
       <workItem from="1654742381790" duration="2259000" />
-      <workItem from="1654917570387" duration="2871000" />
+      <workItem from="1654917570387" duration="2892000" />
+      <workItem from="1655085810959" duration="775000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -104,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654427036664</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="models.py">
+      <created>1654942464643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654942464643</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +124,7 @@
     <MESSAGE value="simple web page" />
     <MESSAGE value="index 수정" />
     <MESSAGE value="result_view.py&#10;result.html&#10;새로운 페이지 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="result_view.py&#10;result.html&#10;새로운 페이지 추가" />
+    <MESSAGE value="models.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="models.py" />
   </component>
 </project>
