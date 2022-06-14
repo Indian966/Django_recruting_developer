@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from main.models import Info
 
 # Create your views here.
 def index(request):
@@ -9,5 +10,10 @@ def greet(request):
     return render(request, "greet.html", {'name': user_name}) # greet.html 렌더링
 
 def data_view(request) :
-    user_name = request.GET['name']
-    return render(request, 'data_view.html', {'name' : user_name})
+    print(request.GET)
+    user_id = request.GET['user_id']
+
+    # gender = request.GET['gender']
+    gender = 'female'
+    Info(user_id=user_id, gender = gender).save()
+    return render(request, 'data_view.html', {'user_id' : user_id})

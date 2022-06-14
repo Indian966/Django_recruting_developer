@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_test/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/data_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/data_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +89,8 @@
       <workItem from="1654491340259" duration="596000" />
       <workItem from="1654742381790" duration="2259000" />
       <workItem from="1654917570387" duration="2892000" />
-      <workItem from="1655085810959" duration="3506000" />
+      <workItem from="1655085810959" duration="3525000" />
+      <workItem from="1655185089278" duration="4302000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -123,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655100360305</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="model 구조 추가&#10;db 연동&#10;새로운 view에 데이터 출력">
+      <created>1655105365126</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655105365126</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
