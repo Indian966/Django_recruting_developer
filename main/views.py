@@ -12,8 +12,6 @@ def greet(request):
     return render(request, "greet.html", {'name': user_name}) # greet.html 렌더링
 
 def data_view(request) :
-    print(request.GET)
-
     user_id = request.GET['uid']
     gender = request.GET['gender']
     Info(user_id=user_id, gender = gender).save()

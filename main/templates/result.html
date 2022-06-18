@@ -5,27 +5,11 @@
         <title>result</title>
     </head>
     <body>
-               <ul>
-           <li>HTML
-               <ol>
-                  <li>태그</li>
-                  <li>요소</li>
-                  <li>속성</li>
-                  <li>기타</li>
-               </ol>
-           </li>
-           <hr />
-           <li>JAVA
-               <ol type="I">
-                  <li>변수</li>
-                  <li>자료형</li>
-                  <li>제어문</li>
-                  <li>배열</li>
-                  <li>메소드</li>
-               </ol>
-           </li>
-           <hr />
-           <li>tensorflow
+    <h1>
+        This page show "main" schema of DB
+    </h1>
+    <ul>
+           <li>User Information
                <ol type="1">
                    {% for i in data %}
                    <li>{{ i }}</li>
@@ -34,7 +18,5 @@
            </li>
        </ul>
     </body>
-    {% for i in list %}
-        {{ i }}
-    {% endfor %}
+
 </html>
