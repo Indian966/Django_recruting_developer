@@ -5,11 +5,9 @@ from main.models import Info
 def index(request):
     return render(request, "index.html") # index.html 렌더링
 
-def greet(request):
-    print(request.GET)
+def new_post(request):
 
-    user_name = request.GET['name']
-    return render(request, "greet.html", {'name': user_name}) # greet.html 렌더링
+    return render(request, "new_post.html") # greet.html 렌더링
 
 def data_view(request) :
     user_id = request.GET['uid']
