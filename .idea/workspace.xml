@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
+    <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="greet.html -&gt; new_post.html 변경&#10;회사의 채용 공고를 업로드 할 수 있는 페이지&#10;index.html 헤더 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/greet.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/new_post.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,8 @@
       <workItem from="1655520517324" duration="2252000" />
       <workItem from="1655790631281" duration="1870000" />
       <workItem from="1655953672909" duration="598000" />
-      <workItem from="1656047920855" duration="1489000" />
+      <workItem from="1656047920855" duration="2463000" />
+      <workItem from="1656297738353" duration="4012000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -155,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655536534971</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="greet.html -&gt; new_post.html 변경&#10;회사의 채용 공고를 업로드 할 수 있는 페이지&#10;index.html 헤더 추가">
+      <created>1656050555927</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656050555927</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +178,7 @@
     <MESSAGE value="urls.py 수정&#10;html 수정" />
     <MESSAGE value="2개의 속성을 받아와서 &#10;db에 저장하고&#10;이걸 data_view에 보여줌" />
     <MESSAGE value="result_view.py에서 DB의 main 스키마를 보여줌" />
-    <option name="LAST_COMMIT_MESSAGE" value="result_view.py에서 DB의 main 스키마를 보여줌" />
+    <MESSAGE value="greet.html -&gt; new_post.html 변경&#10;회사의 채용 공고를 업로드 할 수 있는 페이지&#10;index.html 헤더 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="greet.html -&gt; new_post.html 변경&#10;회사의 채용 공고를 업로드 할 수 있는 페이지&#10;index.html 헤더 추가" />
   </component>
 </project>
