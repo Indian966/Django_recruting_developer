@@ -10,18 +10,18 @@ class Info(models.Model) :
         return self.user_id
 
 class Cop(models.Model) :
-    cop_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    cop_name = models.CharField(max_length = 100)
-    region = models.CharField(max_length = 100)
+    cop_id = models.
+    cop_name = models.TextField
+    region = models.TextField
 
 class Post(models.Model) :
     cop_id = models.ForeinKey(Cop, on_delete = models.CASCADE)
     post_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    position = models.CharField(max_length=100)
+    position = models.TextField
     money = models.IntegerField(default = 1000000)
-    tech = models.CharField(max_length=100)
+    tech = models.TextField
     content = models.TextField
 
 class User(models.Model) :
-    user_id = models.CharField(max_length = 100)
-    post_id = models.ForeinKey
+    user_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    post_id = models.ForeinKey(Post, on_delete = models.CASCADE)
