@@ -1,12 +1,20 @@
 from django.shortcuts import render
-from main.models import Info
+from main.models import User, Post, Cop
 
 # Create your views here.
 def index(request):
-    return render(request, "index.html") # index.html 렌더링
+    post_list = Post.objects.all()
+    return render(request, "index.html", {'post_list' : post_list}) # index.html 렌더링
 
 def new_post(request):
-
+    cop_id = request.GET['cop_id']
+    position = request.GET['position']
+    money = request.GET['money']
+    content = request.GET['content']
+    tech = request.GET['tech']
+    Post(cop_id= cop_id,
+         post_id =
+         position = position)
     return render(request, "new_post.html") # greet.html 렌더링
 
 def post_view(request) :

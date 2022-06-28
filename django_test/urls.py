@@ -16,13 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from main import views
-from main import result_view
+
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('/admin', admin.site.urls),
     path('', views.index, name="index"),
-    path('new-post/', views.new_post, name="new-post"),
-    path('search-result/', view.search_result, name="search-result"),
-    path('post-view/', views.post_view, name="post-view")
+    path('/new-post', views.new_post, name="new-post"),
+    path('/search-result', views.search_result, name="search-result"),
+    path('/post-view', views.post_view, name="post-view")
 ]

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>채용</title>
 </head>
 <body>
     <div data-role="header">
@@ -17,11 +17,18 @@
     <form action="result">
         <input type="submit" value="이동">
     </form>
-    <form action="data_view">
-        <input type="text" name="uid" placeholder="id를 입력하세요.">
-        <input type="text" name="gender" placeholder="성별을 입력하세요.">
-        <input type="submit" value="제출">
-    </form>
+    <ul>
+        <h2>
+            현재 진행중인 공고
+        </h2>
+        <li>
+            <ol type="1">
+                {% for i in data %}
+                   <li>{{ i }}</li>
+                {% endfor %}
+            </ol>
+        </li>
+    </ul>
 
 </body>
 </html>

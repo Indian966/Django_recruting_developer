@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/templates/mod_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/migrations/0002_cop_post_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/migrations/0003_delete_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/732b4e0e-763d-45b6-a79a-1ab3cfcc1bdc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/732b4e0e-763d-45b6-a79a-1ab3cfcc1bdc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_test/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/result_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/data_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/post_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/new_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/new_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +108,8 @@
       <workItem from="1655953672909" duration="598000" />
       <workItem from="1656047920855" duration="2463000" />
       <workItem from="1656297738353" duration="4126000" />
-      <workItem from="1656382546307" duration="2482000" />
+      <workItem from="1656382546307" duration="3105000" />
+      <workItem from="1656417184500" duration="1611000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -184,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656314300511</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="models.py redesign">
+      <created>1656394435565</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656394435565</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
