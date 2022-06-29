@@ -20,9 +20,9 @@ from main import views
 
 
 urlpatterns = [
-    path('/admin', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', views.index, name="index"),
-    path('/new-post', views.new_post, name="new-post"),
+    path('new_post/', views.new_post, name="new-post"),
     path('/search-result', views.search_result, name="search-result"),
     path('/post-view', views.post_view, name="post-view")
 ]

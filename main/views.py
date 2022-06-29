@@ -7,15 +7,18 @@ def index(request):
     return render(request, "index.html", {'post_list' : post_list}) # index.html 렌더링
 
 def new_post(request):
-    cop_id = request.GET['cop_id']
-    position = request.GET['position']
-    money = request.GET['money']
-    content = request.GET['content']
-    tech = request.GET['tech']
-    Post(cop_id= cop_id,
-         post_id =
-         position = position)
-    return render(request, "new_post.html") # greet.html 렌더링
+    Cop()
+    if request.method == 'POST':
+        new_article = Post.objects.create(
+            cop_id=request.POST['cop_id'],
+            position = request.POST['position'],
+            money = request.POST['money'],
+            content = request.POST['content'],
+            tech = request.POST['tech']
+        )
+        return redirect('index')
+
+    return render(request, "new-post.html") # greet.html 렌더링
 
 def post_view(request) :
     user_id = request.GET['uid']

@@ -4,9 +4,9 @@ import uuid
 # Create your models here.
 
 class Cop(models.Model) :
-    cop_id = models.TextField
-    cop_name = models.TextField
-    region = models.TextField
+    cop_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    cop_name = models.CharField(max_length=100, default="", blank=True)
+    region = models.CharField(max_length=100, default = 'korea', blank=True)
 
 class Post(models.Model) :
     cop_id = models.ForeignKey(Cop, on_delete = models.CASCADE)
