@@ -1726,109 +1726,128 @@ model</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_django_session_1</UnderlyingIndexName>
     </key>
-    <column id="570" parent="173" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <key id="571" parent="173">
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="572" parent="174" name="post_id">
+    <column id="570" parent="173" name="cop_id">
       <Position>1</Position>
       <DataType>char(32)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="573" parent="174" name="money">
+    <column id="571" parent="173" name="cop_name">
       <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="572" parent="173" name="region">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="573" parent="173" name="sqlite_autoindex_main_cop_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>cop_id</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="574" parent="173">
+      <ColNames>cop_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_main_cop_1</UnderlyingIndexName>
+    </key>
+    <column id="575" parent="174" name="post_id">
+      <Position>1</Position>
+      <DataType>char(32)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="576" parent="174" name="position">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="577" parent="174" name="money">
+      <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="574" parent="174" name="cop_id_id">
-      <Position>3</Position>
-      <DataType>bigint|0s</DataType>
+    <column id="578" parent="174" name="tech">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="575" parent="174" name="sqlite_autoindex_main_post_1">
+    <column id="579" parent="174" name="content">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="580" parent="174" name="cop_id_id">
+      <Position>6</Position>
+      <DataType>char(32)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="581" parent="174" name="sqlite_autoindex_main_post_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>post_id</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="576" parent="174" name="main_post_cop_id_id_14cb516b">
+    <index id="582" parent="174" name="main_post_cop_id_id_14cb516b">
       <ColNames>cop_id_id</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="577" parent="174">
+    <key id="583" parent="174">
       <ColNames>post_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_main_post_1</UnderlyingIndexName>
     </key>
-    <foreign-key id="578" parent="174">
+    <foreign-key id="584" parent="174">
       <ColNames>cop_id_id</ColNames>
       <RefTableName>main_cop</RefTableName>
-      <RefColNames>id</RefColNames>
+      <RefColNames>cop_id</RefColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
     </foreign-key>
-    <column id="579" parent="175" name="user_id">
+    <column id="585" parent="175" name="user_id">
       <Position>1</Position>
       <DataType>char(32)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="580" parent="175" name="post_id_id">
+    <column id="586" parent="175" name="post_id">
       <Position>2</Position>
-      <DataType>char(32)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="581" parent="175" name="sqlite_autoindex_main_user_1">
+    <index id="587" parent="175" name="sqlite_autoindex_main_user_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_id</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="582" parent="175" name="main_user_post_id_id_371e81a4">
-      <ColNames>post_id_id</ColNames>
-      <ColumnCollations></ColumnCollations>
-    </index>
-    <key id="583" parent="175">
+    <key id="588" parent="175">
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_main_user_1</UnderlyingIndexName>
     </key>
-    <foreign-key id="584" parent="175">
-      <ColNames>post_id_id</ColNames>
-      <RefTableName>main_post</RefTableName>
-      <RefColNames>post_id</RefColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-    </foreign-key>
-    <column id="585" parent="176" name="type">
+    <column id="589" parent="176" name="type">
       <Position>1</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="586" parent="176" name="name">
+    <column id="590" parent="176" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="587" parent="176" name="tbl_name">
+    <column id="591" parent="176" name="tbl_name">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="588" parent="176" name="rootpage">
+    <column id="592" parent="176" name="rootpage">
       <Position>4</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="589" parent="176" name="sql">
+    <column id="593" parent="176" name="sql">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="590" parent="177" name="name">
+    <column id="594" parent="177" name="name">
       <Position>1</Position>
     </column>
-    <column id="591" parent="177" name="seq">
+    <column id="595" parent="177" name="seq">
       <Position>2</Position>
     </column>
   </database-model>

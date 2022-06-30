@@ -7,7 +7,7 @@ def index(request):
     return render(request, "index.html", {'post_list' : post_list}) # index.html 렌더링
 
 def new_post(request):
-    Cop()
+    # Cop()
     if request.method == 'POST':
         new_article = Post.objects.create(
             cop_id=request.POST['cop_id'],

@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
     path('new_post/', views.new_post, name="new-post"),
-    path('/search-result', views.search_result, name="search-result"),
-    path('/post-view', views.post_view, name="post-view")
+    path('search-result', views.search_result, name="search-result"),
+    path('post-view/', views.post_view, name="post-view")
 ]
