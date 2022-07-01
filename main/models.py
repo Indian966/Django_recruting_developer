@@ -1,29 +1,35 @@
 from django.db import models
-import uuid
 
 # Create your models here.
 
-class Cop(models.Model) :
-    cop_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    cop_name = models.CharField(max_length=100, default="", blank=True)
-    region = models.CharField(max_length=100, default = 'korea', blank=True)
+class Company(models.Model) :
+    name = models.CharField(max_length=20, default="", blank=True)
+    region = models.CharField(max_length=20, default = 'korea', blank=True)
 
-    def __str__(self):
-        return self.cop_name
+    class Meta :
+        db_table = 'companies'
 
 class Post(models.Model) :
-    cop_id = models.ForeignKey(Cop, on_delete = models.CASCADE)
-    post_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    position = models.CharField(max_length=100, default="", blank=True)
-    money = models.IntegerField(default = 1000000)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, default="")
+    position = models.CharField(max_length=20, default="", blank=True)
+    reward = models.IntegerField()
     tech = models.CharField(max_length=100, default="", blank=True)
-    content = models.TextField(null = True, default = '')
+    content = models.TextField()
 
-    def __str__(self):
-        return self.post_id
+    class Meta :
+        db_table = 'posts'
 
 class User(models.Model) :
-    user_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    post_id = models.CharField(max_length=100, default="", blank=True)
-    def __str__(self):
-        return self.user_id
+    user_id = models.CharField(primary_key = True,max_length=20, default="", blank=True)
+    name = models.CharField(max_length=20, default="", blank=True)
+    # 일단 나중에 구현
+
+    class Meta :
+        db_table = 'users'
+
+class Application(models.Model) :
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    class Meta:
+        db_table = "applications"
