@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Company(models.Model) :
+    id = models.CharField(primary_key=True, max_length=20, default="", blank=True)
     name = models.CharField(max_length=20, default="", blank=True)
     region = models.CharField(max_length=20, default = 'korea', blank=True)
 

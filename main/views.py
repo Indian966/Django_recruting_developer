@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from main.models import User, Post, Company, Application
 
 import json
@@ -8,29 +8,6 @@ from django.views     import View
 from django.db.models import Q
 
 class PostView(View) :
-    # 채용 공고 등록
-    def post(self, request):
-        try :
-            data = json.loads(request.body)
-
-            company = request.company
-            position = data['position']
-            reward = data['reward']
-            content = data['content']
-            tech = data['tech']
-
-            Post.objects.create(
-                company_id = company.id,
-                position = position,
-                reward = reward,
-                content = content,
-                tech = tech
-            )
-            return JsonResponse({'message' : '등록 완료'}, status=201)
-
-        except KeyError :
-            return JsonResponse({'message' : 'Key Error'}, status=400)
-
 
     # 채용 공고 불러오기 && 검색
     def get(self, request):
@@ -50,10 +27,11 @@ class PostView(View) :
                 'company': post.company.name,
                 'region': post.company.region,
                 'reward': post.reward,
+                'postion' : post.position,
                 'content': post.content,
                 'tech': post.tech,
             } for post in Post.objects.filter(q).distinct()]
-            return JsonResponse({"results": results}, status=200)
+            return render(request, "index.html", {'post_list' : results})
 
         except KeyError:
             return JsonResponse({"message": "Key Error"}, status=400)
@@ -87,7 +65,7 @@ class PostDetailView(View) :
             content = data['content']
             tech = data['tech']
 
-            post = Recruiting.objects.get(id=recruiting_id)
+            post = Post.objects.get(id=post_id)
 
             post.position = position
             post.reward = reward
@@ -109,6 +87,35 @@ class PostDetailView(View) :
 
         return JsonResponse({'message': '삭제되었습니다'}, status=200)
 
+class NewPostView(View) :
+    # 채용 공고 등록
+    def post(self, request):
+        try:
+            print("request : ",request.POST)
+            # print(request.body)
+            # data = json.loads(request.POST)
+
+            company = request.POST['id']
+            position = request.POST['position']
+            reward = request.POST['reward']
+            content = request.POST['content']
+            tech = request.POST['tech']
+
+            Post.objects.create(
+                company_id=company,
+                position=position,
+                reward=reward,
+                content=content,
+                tech=tech
+            )
+            return redirect('.')
+
+        except KeyError:
+            return JsonResponse({'message': 'Key Error'}, status=400)
+
+    def get(self, request):
+        # 뷰 로직 작성
+        return render(request, "new-post.html")
 
 class ApplicationView(View):
     # 채용공고에 지원하기

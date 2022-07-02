@@ -11,7 +11,7 @@
         <h1> 구인 구직 사이트</h1>
     </div>
 
-    <form action="new_post">
+    <form action="new-post">
         <input type="submit" value="새로운 공고">
     </form>
     <form action="result">
@@ -21,13 +21,20 @@
         <h2>
             현재 진행중인 공고
         </h2>
-        <li>
-            <ol type="1">
-                {% for i in data %}
-                   <li>{{ i }}</li>
-                {% endfor %}
-            </ol>
-        </li>
+        <ul>
+            <li>
+            {% for item in post_list %}
+                <br>'채용공고_id' :{{ item.id }}</br>
+                <br>'회사명' :{{ item.company }}</br>
+                <br>'국가' :{{ item.region }}</br>
+                <br>'채용포지션' :{{ item.position }}</br>
+                <br>'채용보상금' :{{ item.reward }}</br>
+                <br>'사용기술' :{{ item.tech }}</br>
+
+            {% endfor %}
+            </li>
+        </ul>
+
     </ul>
 
 </body>
