@@ -53,17 +53,15 @@ class PostDetailView(View) :
             'content': post.content,
             'tech': post.tech
         }
-        return JsonResponse({'result' : result}, status=200)
+        return render(request, "post_view.html", {'post_list' : result})
 
     # 채용 공고 수정
     def put(self, request, post_id):
         try :
-            data = json.loads(request.body)
-
-            position = data['position']
-            reward = data['reward']
-            content = data['content']
-            tech = data['tech']
+            position = request.POST['position']
+            reward = request.POST['reward']
+            content = request.POST['content']
+            tech = request.POST['tech']
 
             post = Post.objects.get(id=post_id)
 
@@ -108,7 +106,7 @@ class NewPostView(View) :
                 content=content,
                 tech=tech
             )
-            return redirect('.')
+            return redirect('/')
 
         except KeyError:
             return JsonResponse({'message': 'Key Error'}, status=400)

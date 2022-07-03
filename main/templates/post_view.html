@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>data_view</title>
+    <title>post_view</title>
 </head>
 <body>
-    <h1>user_id : {{user_id}}</h1>
-    <h1>gender : {{gender}}</h1>
+    <ul>
+        {% for item in post_list %}
+            <br>
+            <li>
+                '채용공고_id' :{{ item.id }} <br>
+                '회사명' :{{ item.company }} <br>
+                '국가' :{{ item.region }}<br>
+                '채용포지션' :{{ item.position }}<br>
+                '채용보상금' :{{ item.reward }}<br>
+                '사용기술' :{{ item.tech }}<br>
+            </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

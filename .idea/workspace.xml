@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/migrations/0002_alter_company_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/732b4e0e-763d-45b6-a79a-1ab3cfcc1bdc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/732b4e0e-763d-45b6-a79a-1ab3cfcc1bdc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_test/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/new-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/new-post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/mod_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/mod_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/post_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/post_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +111,8 @@
       <workItem from="1656652203370" duration="12808000" />
       <workItem from="1656679343352" duration="2018000" />
       <workItem from="1656742105181" duration="5113000" />
-      <workItem from="1656765675734" duration="4142000" />
+      <workItem from="1656765675734" duration="4302000" />
+      <workItem from="1656838736038" duration="5004000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -227,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656684380878</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="model company id 생성&#10;view 재구성&#10;url 패턴 재구성">
+      <created>1656771588830</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1656771588830</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +255,7 @@
     <MESSAGE value="DB model 수정" />
     <MESSAGE value="DB 초기화" />
     <MESSAGE value="DB 초기화&#10;model 재구성&#10;view 재구성&#10;url 패턴 재구성" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB 초기화&#10;model 재구성&#10;view 재구성&#10;url 패턴 재구성" />
+    <MESSAGE value="model company id 생성&#10;view 재구성&#10;url 패턴 재구성" />
+    <option name="LAST_COMMIT_MESSAGE" value="model company id 생성&#10;view 재구성&#10;url 패턴 재구성" />
   </component>
 </project>

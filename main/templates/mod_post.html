@@ -8,5 +8,34 @@
     <h1>
         공고 수정하는 페이지
     </h1>
+    <div data-role="content">
+      <form method="post">
+          {% csrf_token %}
+          <label>(1) 회사 id
+            <input type="text" name="id" id="txt1" value="회사 id">
+          </label>
+          <div data-role="fieldcontain" class="ui-disabled">
+              <label>(2) 채용 포지션
+                  <input type="text" name="position" id="txt2" value="백엔드 주니어 개발자">
+              </label>
+          </div>
+          <div data-role="fieldcontain">
+              <label for="txt3">(3) 채용 보상금</label>
+              <input type="text" name="reward" id="txt3" value="1000000">
+          </div>
+          <div data-role="fieldcontain" class="ui-disabled">
+              <label>(4) 채용 내용<br>
+                  <textarea rows="10" cols="50" name="content">개발팀에서 백엔드 주니어 개발자를 채용합니다. 자격요건은..</textarea>
+              </label>
+          </div>
+          <div data-role="fieldcontain" class="ui-disabled">
+              <label>(5) 사용 기술
+                  <input type="text" name="tech" id="txt5" value="Python">
+              </label>
+          </div>
+          <input type="submit" value="글쓰기">
+      </form>
+
+   </div>
 </body>
 </html>
