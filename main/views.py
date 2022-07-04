@@ -41,19 +41,18 @@ class PostDetailView(View) :
     # 채용 상세 정보
     def get(self, request, post_id):
         if not Post.objects.filter(id=post_id).exists() :
-            return JsonResponse({'message' : '채용 공고가 존재하지 않음'}, status=404)
+            return JsonResponse({'GET message' : 'No post'}, status=404)
 
         post = Post.objects.get(id=post_id)
-
         result = {
-            'recruiting_id': post.id,
+            'post_id': post.id,
             'company': post.company.name,
             'position': post.position,
             'reward': post.reward,
             'content': post.content,
             'tech': post.tech
         }
-        return render(request, "post_view.html", {'post_list' : result})
+        return render(request, "post_view.html", {'post_info' : result})
 
     # 채용 공고 수정
     def put(self, request, post_id):
@@ -72,9 +71,9 @@ class PostDetailView(View) :
 
             post.save()
 
-            return JsonResponse({'message': '수정되었습니다'}, status=201)
+            return redirect('/')
         except Recruiting.DoesNotExist:
-            return JsonResponse({'message': '없는 채용공고입니다'}, status=401)
+            return JsonResponse({'PUT message': 'No post'}, status=401)
 
     # 채용 공고 삭제
     def delete(self, request, post_id):
@@ -83,7 +82,7 @@ class PostDetailView(View) :
         post = Recruiting.objects.get(id=post_id)
         post.delete()
 
-        return JsonResponse({'message': '삭제되었습니다'}, status=200)
+        return redirect('/')
 
 class NewPostView(View) :
     # 채용 공고 등록
