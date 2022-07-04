@@ -27,7 +27,7 @@ class PostView(View) :
                 'company': post.company.name,
                 'region': post.company.region,
                 'reward': post.reward,
-                'postion' : post.position,
+                'position' : post.position,
                 'content': post.content,
                 'tech': post.tech,
             } for post in Post.objects.filter(q).distinct()]
@@ -40,6 +40,7 @@ class PostView(View) :
 class PostDetailView(View) :
     # 채용 상세 정보
     def get(self, request, post_id):
+        print("GET")
         if not Post.objects.filter(id=post_id).exists() :
             return JsonResponse({'GET message' : 'No post'}, status=404)
 
@@ -56,9 +57,8 @@ class PostDetailView(View) :
 
     # 채용 공고 수정
     def post(self, request, post_id):
-        print("I tried")
+        print("POST")
         try :
-            print("I tried")
             position = request.POST['position']
             reward = request.POST['reward']
             content = request.POST['content']
@@ -77,14 +77,11 @@ class PostDetailView(View) :
         except :
             return JsonResponse({'PUT message': 'No post'}, status=401)
 
-    # 채용 공고 삭제
-    def delete(self, request, post_id):
-        if not Recruiting.objects.filter(id=post_id).exists():
-            return JsonResponse({'message': '없는 채용공고입니다'}, status=404)
-        post = Recruiting.objects.get(id=post_id)
-        post.delete()
+    def temp(self, request):
+        if request.method == delete:
+            print("yee")
 
-        return redirect('/')
+
 
 class NewPostView(View) :
     # 채용 공고 등록
@@ -136,35 +133,32 @@ class ApplicationView(View):
             return JsonResponse({'message': 'Key Error'}, status=400)
 
 
-# Create your views here.
-def index(request):
-    post_list = Post.objects.all()
-    return render(request, "index.html", {'post_list' : post_list}) # index.html 렌더링
+# # Create your views here.
+# def index(request):
+#     post_list = Post.objects.all()
+#     return render(request, "index.html", {'post_list' : post_list}) # index.html 렌더링
+#
+# def new_post(request):
+#     # Cop()
+#     if request.method == 'POST':
+#         new_article = Post.objects.create(
+#             cop_id=request.POST['cop_id'],
+#             position = request.POST['position'],
+#             money = request.POST['money'],
+#             content = request.POST['content'],
+#             tech = request.POST['tech']
+#         )
+#         return redirect('index')
+#
+#     return render(request, "new-post.html") # greet.html 렌더링
 
-def new_post(request):
-    # Cop()
-    if request.method == 'POST':
-        new_article = Post.objects.create(
-            cop_id=request.POST['cop_id'],
-            position = request.POST['position'],
-            money = request.POST['money'],
-            content = request.POST['content'],
-            tech = request.POST['tech']
-        )
-        return redirect('index')
 
-    return render(request, "new-post.html") # greet.html 렌더링
+# 채용 공고 삭제
+    def delete(self, request, post_id):
+        print('delete')
+        if not post.objects.filter(id=post_id).exists():
+            return JsonResponse({'message': '없는 채용공고입니다'}, status=404)
+        post = post.objects.get(id=post_id)
+        post.delete()
 
-def post_view(request) :
-    user_id = request.GET['uid']
-    gender = request.GET['gender']
-    Info(user_id=user_id, gender = gender).save()
-    return render(request, 'post_view.html', {'user_id' : user_id, 'gender' : gender})
-
-def search_result(request) :
-
-    return render(request, 'search_result.html')
-
-def mod_post(requst) :
-
-    return render(requst, 'mod_post.html')
+        return redirect('/')

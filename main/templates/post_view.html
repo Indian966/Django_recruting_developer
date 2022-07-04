@@ -5,41 +5,39 @@
     <title>post_view</title>
 </head>
 <body>
-<!--    <ul>-->
-<!--        <br>-->
-<!--            <li>-->
-<!--                '채용공고_id' :{{ post_info.post_id }} <br>-->
-<!--                '회사명' :{{ post_info.company }} <br>-->
-<!--                '채용포지션' :{{ post_info.position }}<br>-->
-<!--                '채용보상금' :{{ post_info.reward }}<br>-->
-<!--                '내용' :{{ post_info.content }}<br>-->
-<!--                '사용기술' :{{ post_info.tech }}<br>-->
-<!--            </li>-->
-<!--    </ul>-->
+    <h1>
+        공고 상세 보기
+    </h1>
 
     <div data-role="content">
-      <form method="post">
-          {% csrf_token %}
-          <label>(1) 채용 포지션
-              <input type="text" name="position" id="txt2" value={{ post_info.position }}>
-          </label>
-          <div data-role="fieldcontain">
-              <label for="txt3">(2) 채용 보상금</label>
-              <input type="text" name="reward" id="txt3" value={{ post_info.reward }}>
-          </div>
-          <div data-role="fieldcontain" class="ui-disabled">
-              <label>(3) 채용 내용<br>
-                  <textarea rows="10" cols="50" name="content">{{ post_info.content }}</textarea>
+          <form method="post">
+              {% csrf_token %}
+              <label>(1) 채용 포지션
+                  <input type="text" name="position" id="txt2" value={{ post_info.position }}>
               </label>
-          </div>
-          <div data-role="fieldcontain" class="ui-disabled">
-              <label>(4) 사용 기술
-                  <input type="text" name="tech" id="txt5" value={{ post_info.tech }}>
-              </label>
-          </div>
-          <input type="submit" value="글쓰기">
-      </form>
+              <div data-role="fieldcontain">
+                  <label for="txt3">(2) 채용 보상금</label>
+                  <input type="text" name="reward" id="txt3" value={{ post_info.reward }}>
+              </div>
+              <div data-role="fieldcontain" class="ui-disabled">
+                  <label>(3) 채용 내용<br>
+                      <textarea rows="10" cols="50" name="content">{{ post_info.content }}</textarea>
+                  </label>
+              </div>
+              <div data-role="fieldcontain" class="ui-disabled">
+                  <label>(4) 사용 기술
+                      <input type="text" name="tech" id="txt5" value={{ post_info.tech }}>
+                  </label>
+              </div>
+              <input type="submit" value="수정하기">
 
+          </form>
+        <form method="temp">
+            {% csrf_token %}
+            <input type="text" name="post_id" value={{post_info.post_id}}>
+            <input type="submit"  value="삭제하기">
+        </form>
+        <button onclick="location.href='/delete/{{post_info.post_id}}'"> 삭제 </button>
    </div>
 </body>
 </html>
