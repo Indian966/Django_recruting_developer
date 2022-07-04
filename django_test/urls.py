@@ -24,6 +24,5 @@ urlpatterns = [
     path('', PostView.as_view(), name="PostView"),
     path('new-post/', NewPostView.as_view(), name="NewPostView"),
     path('<int:post_id>/', PostDetailView.as_view(), name="PostDetailView"),
-    # path('<int:post_id>/mod-post', PostDetailView.as_view(), name="PostModView"),
     path('application/', ApplicationView.as_view(), name="ApplicationView")
 ]

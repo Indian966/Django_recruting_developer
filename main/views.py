@@ -55,8 +55,10 @@ class PostDetailView(View) :
         return render(request, "post_view.html", {'post_info' : result})
 
     # 채용 공고 수정
-    def put(self, request, post_id):
+    def post(self, request, post_id):
+        print("I tried")
         try :
+            print("I tried")
             position = request.POST['position']
             reward = request.POST['reward']
             content = request.POST['content']
@@ -72,7 +74,7 @@ class PostDetailView(View) :
             post.save()
 
             return redirect('/')
-        except Recruiting.DoesNotExist:
+        except :
             return JsonResponse({'PUT message': 'No post'}, status=401)
 
     # 채용 공고 삭제
