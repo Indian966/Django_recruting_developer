@@ -14,6 +14,9 @@
     <form action="new-post">
         <input type="submit" value="새로운 공고">
     </form>
+    <form action="application">
+        <input type="submit" value="지원하러가기">
+    </form>
 
     <ul>
         <h2>
@@ -23,7 +26,7 @@
             {% for item in post_list %}
             <br>
                 <li>
-                    <a href="{{item.id}}/">
+                    <a href="/detail/{{item.id}}/">
                     '채용공고_id' :{{ item.id }} <br>
                     '회사명' :{{ item.company }} <br>
                     '국가' :{{ item.region }}<br>

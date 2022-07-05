@@ -40,7 +40,7 @@ class PostView(View) :
 class PostDetailView(View) :
     # 채용 상세 정보
     def get(self, request, post_id):
-        print("GET")
+        print(request.method)
         if not Post.objects.filter(id=post_id).exists() :
             return JsonResponse({'GET message' : 'No post'}, status=404)
 
@@ -77,19 +77,25 @@ class PostDetailView(View) :
         except :
             return JsonResponse({'PUT message': 'No post'}, status=401)
 
-    def temp(self, request):
-        if request.method == delete:
-            print("yee")
 
+# 채용 공고 삭제
+class PostDeleteView(View) :
 
+    def get(self, request, post_id):
+        print(request.method)
+        print('delete')
+        if not Post.objects.filter(id=post_id).exists():
+            return JsonResponse({'message': '없는 채용공고입니다'}, status=404)
+        post = Post.objects.get(id=post_id)
+        post.delete()
+
+        return redirect('/')
 
 class NewPostView(View) :
     # 채용 공고 등록
     def post(self, request):
         try:
             print("request : ",request.POST)
-            # print(request.body)
-            # data = json.loads(request.POST)
 
             company = request.POST['id']
             position = request.POST['position']
@@ -115,20 +121,26 @@ class NewPostView(View) :
 
 class ApplicationView(View):
     # 채용공고에 지원하기
-    def post(self, request, recruiting_id, user_id):
-        if not Application.objects.filter(user__id=user_id).exists():
-            return JsonResponse({'message' : '이미 지원한 공고'}, status=404)
-        try:
-            data = json.loads(request.body)
+    def get(self, request):
+        print("GET")
+        return render(request, "application.html")
 
-            post = data['post_id']
-            user = data['user_id']
+    def post(self, request):
+        print("POST")
+        try:
+            post = request.POST['post_id']
+            user = request.POST['user_id']
+
+            if Application.objects.filter(user_id=user).exists():
+                return JsonResponse({'message': '이미 지원한 공고'}, status=404)
+
+
 
             Application.objects.create(
-                post = post,
-                user = user,
+                post_id = post,
+                user_id = user,
             )
-            return JsonResponse({'message' : '지원 완료'}, status=201)
+            return redirect('/')
         except KeyError:
             return JsonResponse({'message': 'Key Error'}, status=400)
 
@@ -153,12 +165,3 @@ class ApplicationView(View):
 #     return render(request, "new-post.html") # greet.html 렌더링
 
 
-# 채용 공고 삭제
-    def delete(self, request, post_id):
-        print('delete')
-        if not post.objects.filter(id=post_id).exists():
-            return JsonResponse({'message': '없는 채용공고입니다'}, status=404)
-        post = post.objects.get(id=post_id)
-        post.delete()
-
-        return redirect('/')

@@ -30,14 +30,9 @@
                   </label>
               </div>
               <input type="submit" value="수정하기">
-
           </form>
-        <form method="temp">
-            {% csrf_token %}
-            <input type="text" name="post_id" value={{post_info.post_id}}>
-            <input type="submit"  value="삭제하기">
-        </form>
-        <button onclick="location.href='/delete/{{post_info.post_id}}'"> 삭제 </button>
+        <button onclick="location.href='/detail/{{post_info.post_id}}/delete'"> 삭제 </button>
+
    </div>
 </body>
 </html>
