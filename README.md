@@ -26,6 +26,7 @@ etc - Docker & GithubAction <br>
 
 ![newpost](https://user-images.githubusercontent.com/22446076/177274037-8a6b4714-8868-4179-baa3-e8e70cf787b7.png)
 
+'새로운 공고' 버튼을 통해 이동하였습니다.
 새로운 공고를 작성 할 수 있습니다.
 
 ----------
@@ -34,6 +35,7 @@ etc - Docker & GithubAction <br>
 
 ![post_detail](https://user-images.githubusercontent.com/22446076/177274137-468ded1a-43db-4f7e-b3f9-136d59290482.png)
 
+공고 리스트를 클릭하여 이동하였습니다.
 공고의 자세한 내용을 볼 수 있습니다.
 수정, 삭제 할 수 있습니다.
 
@@ -45,6 +47,7 @@ etc - Docker & GithubAction <br>
 
 ![application](https://user-images.githubusercontent.com/22446076/177274415-cb2bbfa7-a120-45f4-83af-f72a477b9112.png)
 
+'지원하러가기' 버튼을 통해 이동하였습니다.
 공고의 id와 사용자의 id를 이용하여 지원 할 수 있습니다.
 
 ----------
