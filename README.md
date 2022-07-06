@@ -62,6 +62,11 @@ admin을 통해 사용자, 회사, 공고에 대한 생성, 수정, 삭제를 �
 
 ----------
 
+## url patterns
+
+![url_patterns](https://user-images.githubusercontent.com/22446076/177480834-d014ba4b-67a4-4066-a580-babfad67750e.png)
+
+----------
 ## Model
 
 ![model1](https://user-images.githubusercontent.com/22446076/177275494-5d43327b-dee4-44d7-94c6-73c84bf6a8c3.png)
@@ -70,3 +75,17 @@ admin을 통해 사용자, 회사, 공고에 대한 생성, 수정, 삭제를 �
 
 DB에 저장된 Model입니다.
 
+----------
+
+## AWS EC2 개발환경
+
+
+![jupyter_server](https://user-images.githubusercontent.com/22446076/177480882-4edfd334-badf-4920-ad60-ef1e18b02362.png)
+
+Jupyter 노트북을 데몬으로 돌려서 서버를 구축하였습니다.
+
+----------
+
+![github_action](https://user-images.githubusercontent.com/22446076/177481221-cb5058d0-8976-43df-9fdb-ea53a215fa4c.png)
+
+Github Action을 이용한 Docker 자동 빌드입니다.
