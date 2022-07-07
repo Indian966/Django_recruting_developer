@@ -135,7 +135,6 @@ class ApplicationView(View):
                 return JsonResponse({'message': '이미 지원한 공고'}, status=404)
 
 
-
             Application.objects.create(
                 post_id = post,
                 user_id = user,
@@ -143,25 +142,3 @@ class ApplicationView(View):
             return redirect('/')
         except KeyError:
             return JsonResponse({'message': 'Key Error'}, status=400)
-
-
-# # Create your views here.
-# def index(request):
-#     post_list = Post.objects.all()
-#     return render(request, "index.html", {'post_list' : post_list}) # index.html 렌더링
-#
-# def new_post(request):
-#     # Cop()
-#     if request.method == 'POST':
-#         new_article = Post.objects.create(
-#             cop_id=request.POST['cop_id'],
-#             position = request.POST['position'],
-#             money = request.POST['money'],
-#             content = request.POST['content'],
-#             tech = request.POST['tech']
-#         )
-#         return redirect('index')
-#
-#     return render(request, "new-post.html") # greet.html 렌더링
-
-
