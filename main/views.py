@@ -1,144 +1,74 @@
-from django.shortcuts import render, redirect
 from main.models import User, Post, Company, Application
 
-import json
+from rest_framework import status
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from main.serializers import PostSerializer, PostCreateSerializer, PostUpdateSerializer, \
+    PostDetailSerializer, ApplicationSerializer
 
-from django.http      import JsonResponse
-from django.views     import View
 from django.db.models import Q
 
-class PostView(View) :
+# Create your views here.
+@api_view(['GET', 'POST'])
+def PostList(request):
+    if request.method == 'GET':
+        posting = Post.objects.all()
+        q = request.GET.get('q', '')
+        if q:
+            posting = posting.filter(
+                Q(company__name__icontains=q) | Q(company__region__icontains=q) |
+                Q(content__icontains=q) | Q(position__icontains=q) | Q(reward__icontains=q) | Q(tech__icontains=q))
+        serializer = PostSerializer(posting, many=True)
+        return Response(serializer.data)
 
-    # 채용 공고 불러오기 && 검색
-    def get(self, request):
-        try:
-            search = request.GET.get('search', None)
-
-            q = Q()
-
-            if search:
-                q &= Q(company__name__icontains=search)
-                q &= Q(position__icontains=search)
-                q &= Q(content__icontains=search)
-                q &= Q(tech__icontains=search)
-
-            results = [{
-                'id': post.id,
-                'company': post.company.name,
-                'region': post.company.region,
-                'reward': post.reward,
-                'position' : post.position,
-                'content': post.content,
-                'tech': post.tech,
-            } for post in Post.objects.filter(q).distinct()]
-            return render(request, "index.html", {'post_list' : results})
-
-        except KeyError:
-            return JsonResponse({"message": "Key Error"}, status=400)
+    elif request.method == 'POST':
+        serializer = PostCreateSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=404)
 
 
-class PostDetailView(View) :
-    # 채용 상세 정보
-    def get(self, request, post_id):
-        print(request.method)
-        if not Post.objects.filter(id=post_id).exists() :
-            return JsonResponse({'GET message' : 'No post'}, status=404)
+@api_view(['GET', 'PUT', 'DELETE'])
+def PostDetail(request, pk):
+    try:
+        posting = Post.objects.get(id=pk)
+    except posting.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
 
-        post = Post.objects.get(id=post_id)
-        result = {
-            'post_id': post.id,
-            'company': post.company.name,
-            'position': post.position,
-            'reward': post.reward,
-            'content': post.content,
-            'tech': post.tech
-        }
-        return render(request, "post_view.html", {'post_info' : result})
+    if request.method == 'GET':
+        serializer = PostDetailSerializer(posting)
+        return Response(serializer.data)
 
-    # 채용 공고 수정
-    def post(self, request, post_id):
-        print("POST")
-        try :
-            position = request.POST['position']
-            reward = request.POST['reward']
-            content = request.POST['content']
-            tech = request.POST['tech']
+    elif request.method == 'PUT':
+        serializer = PostUpdateSerializer(posting, data=request.data)
 
-            post = Post.objects.get(id=post_id)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-            post.position = position
-            post.reward = reward
-            post.content = content
-            post.tech = tech
-
-            post.save()
-
-            return redirect('/')
-        except :
-            return JsonResponse({'PUT message': 'No post'}, status=401)
+    elif request.method == 'DELETE':
+        posting = Post.objects.get(id=pk)
+        posting.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-# 채용 공고 삭제
-class PostDeleteView(View) :
+@api_view(['GET', 'POST'])
+def ApplyPost(request, pk):
+    try:
+        apply = Application.objects.all()
+    except apply.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
 
-    def get(self, request, post_id):
-        print(request.method)
-        print('delete')
-        if not Post.objects.filter(id=post_id).exists():
-            return JsonResponse({'message': '없는 채용공고입니다'}, status=404)
-        post = Post.objects.get(id=post_id)
-        post.delete()
+    if request.method == 'GET':
+        apply = apply.filter(jobposting_id_id=pk)
+        serializer = ApplicationSerializer(apply, many=True)
+        return Response(serializer.data)
 
-        return redirect('/')
-
-class NewPostView(View) :
-    # 채용 공고 등록
-    def post(self, request):
-        try:
-            print("request : ",request.POST)
-
-            company = request.POST['id']
-            position = request.POST['position']
-            reward = request.POST['reward']
-            content = request.POST['content']
-            tech = request.POST['tech']
-
-            Post.objects.create(
-                company_id=company,
-                position=position,
-                reward=reward,
-                content=content,
-                tech=tech
-            )
-            return redirect('/')
-
-        except KeyError:
-            return JsonResponse({'message': 'Key Error'}, status=400)
-
-    def get(self, request):
-        # 뷰 로직 작성
-        return render(request, "new-post.html")
-
-class ApplicationView(View):
-    # 채용공고에 지원하기
-    def get(self, request):
-        print("GET")
-        return render(request, "application.html")
-
-    def post(self, request):
-        print("POST")
-        try:
-            post = request.POST['post_id']
-            user = request.POST['user_id']
-
-            if Application.objects.filter(user_id=user).exists():
-                return JsonResponse({'message': '이미 지원한 공고'}, status=404)
-
-
-            Application.objects.create(
-                post_id = post,
-                user_id = user,
-            )
-            return redirect('/')
-        except KeyError:
-            return JsonResponse({'message': 'Key Error'}, status=400)
+    if request.method == 'POST':
+        serializer = ApplicationSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=404)
