@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/732b4e0e-763d-45b6-a79a-1ab3cfcc1bdc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/732b4e0e-763d-45b6-a79a-1ab3cfcc1bdc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_test/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_test/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +149,8 @@
       <workItem from="1658213151054" duration="147000" />
       <workItem from="1658989904804" duration="626000" />
       <workItem from="1659414963339" duration="49000" />
-      <workItem from="1659503948543" duration="6878000" />
+      <workItem from="1659503948543" duration="7035000" />
+      <workItem from="1659592667468" duration="2894000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657193302583</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="RESTful 하기 위해 FrontEnd 배제">
+      <created>1659519498542</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1659519498542</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +349,7 @@
     <MESSAGE value="게시글 삭제 기능 추가중" />
     <MESSAGE value="게시글 삭제&#10;공고 지원하기" />
     <MESSAGE value="index에 설명 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="index에 설명 추가" />
+    <MESSAGE value="RESTful 하기 위해 FrontEnd 배제" />
+    <option name="LAST_COMMIT_MESSAGE" value="RESTful 하기 위해 FrontEnd 배제" />
   </component>
 </project>

@@ -28,7 +28,7 @@ class PostSerializer(serializers.ModelSerializer):
 
 # 채용공고 등록
 class PostCreateSerializer(serializers.ModelSerializer):
-    회사_id = serializers.IntegerField(source='company_id')
+    회사_id = serializers.CharField(source='company_id')
     채용포지션 = serializers.CharField(source='position')
     채용보상금 = serializers.IntegerField(source='reward')
     채용내용 = serializers.CharField(source='content')
