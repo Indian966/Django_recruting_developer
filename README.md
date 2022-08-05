@@ -36,9 +36,8 @@ etc - Docker & GithubAction <br>
 
 ## Application
 
-![application0](https://user-images.githubusercontent.com/22446076/177275423-8af35aa7-bea0-4368-8833-3d5f6409aed0.png)
+![rest_04](https://user-images.githubusercontent.com/22446076/183015579-b2950bef-2082-4021-a873-733a7346a6b5.png)
 
-![application](https://user-images.githubusercontent.com/22446076/177274415-cb2bbfa7-a120-45f4-83af-f72a477b9112.png)
 
 '지원하러가기' 버튼을 통해 이동하였습니다.
 공고의 id와 사용자의 id를 이용하여 지원 할 수 있습니다.
@@ -51,12 +50,12 @@ etc - Docker & GithubAction <br>
 
 admin을 통해 사용자, 회사, 공고에 대한 생성, 수정, 삭제를 수행 할 수 있습니다.
 
-![mainpage_after_admin_newpost](https://user-images.githubusercontent.com/22446076/177275188-a32826b5-ef61-4ad1-8bf0-d935ee73f249.png)
 
 ----------
 
 ## url patterns
 
+![rest_03](https://user-images.githubusercontent.com/22446076/183015645-55d86d3b-069a-420a-bfe9-204b024fc135.png)
 
 
 ----------
