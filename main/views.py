@@ -61,8 +61,9 @@ def ApplyPost(request, pk):
     except apply.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
+    #id, post, post_id, user, user_id
     if request.method == 'GET':
-        apply = apply.filter(jobposting_id_id=pk)
+        apply = apply.filter(post_id=pk)
         serializer = ApplicationSerializer(apply, many=True)
         return Response(serializer.data)
 

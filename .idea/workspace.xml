@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main/migrations/0003_auto_20220805_1521.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/application.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/new-post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/post_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,7 @@
       <workItem from="1659414963339" duration="49000" />
       <workItem from="1659503948543" duration="7035000" />
       <workItem from="1659592667468" duration="2925000" />
-      <workItem from="1659675717906" duration="565000" />
+      <workItem from="1659675717906" duration="4710000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -329,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659597513038</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Delete Templates">
+      <created>1659676301071</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1659676301071</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,6 +368,7 @@
     <MESSAGE value="index에 설명 추가" />
     <MESSAGE value="RESTful 하기 위해 FrontEnd 배제" />
     <MESSAGE value="serializers.py&#10;rest_framework상에서 동작" />
-    <option name="LAST_COMMIT_MESSAGE" value="serializers.py&#10;rest_framework상에서 동작" />
+    <MESSAGE value="Delete Templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete Templates" />
   </component>
 </project>

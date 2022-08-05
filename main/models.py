@@ -29,8 +29,8 @@ class User(models.Model) :
         db_table = 'users'
 
 class Application(models.Model) :
-    post = models.ForeignKey(Post, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post_id = models.ForeignKey(Post, on_delete=models.CASCADE)
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
         db_table = "applications"

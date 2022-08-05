@@ -74,8 +74,8 @@ class PostDetailSerializer(serializers.ModelSerializer):
 
 # 채용공고 지원
 class ApplicationSerializer(serializers.ModelSerializer):
-    사용자_id = serializers.CharField(source='user')
-    채용공고_id = serializers.IntegerField(source='post')
+    사용자_id = serializers.CharField(source='user_id_id')
+    채용공고_id = serializers.IntegerField(source='post_id_id')
 
     class Meta:
         model = Application
