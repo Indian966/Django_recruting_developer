@@ -2,12 +2,12 @@
 <pre>
 Django 웹 서버 구축 toy project 입니다.
 개발자 채용 사이트를 만들어 보았습니다.
-http://3.39.16.190:8000/
+
 </pre>
 
 
 기술 스택 : <br>
-웹 - Django <br>
+웹 - Django, DRF <br>
 서버 - AWS EC2 <br>
 Front - html <br>
 DB - SQLite <br>
@@ -16,25 +16,17 @@ etc - Docker & GithubAction <br>
 
 ## 메인 페이지
 
-![mainpage_after_admin_newpost](https://user-images.githubusercontent.com/22446076/177272167-1d6e0d21-5617-46c4-be8e-0e7ddc00ad7d.png)
+![rest_01](https://user-images.githubusercontent.com/22446076/183009083-ecbca4b0-8e06-41a6-8c47-30f0e872e3dc.png)
+
 
 채용 공고 리스트와 
 새로운 공고를 작성, 지원하기 페이지로 넘어갈 수 있습니다.
 
 ----------
 
-## NewPostView
+## PostDetail
 
-![newpost](https://user-images.githubusercontent.com/22446076/177274037-8a6b4714-8868-4179-baa3-e8e70cf787b7.png)
-
-'새로운 공고' 버튼을 통해 이동하였습니다.
-새로운 공고를 작성 할 수 있습니다.
-
-----------
-
-## PostDetailView
-
-![post_detail](https://user-images.githubusercontent.com/22446076/177274137-468ded1a-43db-4f7e-b3f9-136d59290482.png)
+![rest_02](https://user-images.githubusercontent.com/22446076/183009152-269da31c-87a0-4f2e-980d-2d76a409cb9b.png)
 
 공고 리스트를 클릭하여 이동하였습니다.
 공고의 자세한 내용을 볼 수 있습니다.
@@ -42,7 +34,7 @@ etc - Docker & GithubAction <br>
 
 ----------
 
-## ApplicationView
+## Application
 
 ![application0](https://user-images.githubusercontent.com/22446076/177275423-8af35aa7-bea0-4368-8833-3d5f6409aed0.png)
 
@@ -65,7 +57,7 @@ admin을 통해 사용자, 회사, 공고에 대한 생성, 수정, 삭제를 �
 
 ## url patterns
 
-![url_patterns](https://user-images.githubusercontent.com/22446076/177480834-d014ba4b-67a4-4066-a580-babfad67750e.png)
+
 
 ----------
 ## Model
