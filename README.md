@@ -57,13 +57,13 @@ admin을 통해 사용자, 회사, 공고에 대한 생성, 수정, 삭제를 �
 
 ![rest_03](https://user-images.githubusercontent.com/22446076/183015645-55d86d3b-069a-420a-bfe9-204b024fc135.png)
 
+url 패턴입니다.
 
 ----------
 ## Model
 
-![model1](https://user-images.githubusercontent.com/22446076/177275494-5d43327b-dee4-44d7-94c6-73c84bf6a8c3.png)
+![rest_05](https://user-images.githubusercontent.com/22446076/183015930-35eb5994-8638-44a7-8243-a8bfc6b061ae.png)
 
-![moodel2](https://user-images.githubusercontent.com/22446076/177275515-12347431-d860-4830-9fd3-5a1bfc382616.png)
 
 DB에 저장된 Model입니다.
 
