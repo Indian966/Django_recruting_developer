@@ -17,6 +17,7 @@ etc - Docker & GithubAction <br>
 ## API 명세서
 
 |Company|||
+|---|---|---|
 ||GET|회사 목록|
 ||POST|회사 등록|
 ||GET|회사 상세정보|
@@ -24,6 +25,7 @@ etc - Docker & GithubAction <br>
 ||DEL|회사 삭제|
 
 |User|||
+|---|---|---|
 ||GET|사용자 목록|
 ||POST|사용자 등록|
 ||GET|사용자 상세정보|
@@ -31,6 +33,7 @@ etc - Docker & GithubAction <br>
 ||DEL|사용자 삭제|
 
 |Posting|||
+|---|---|---|
 ||GET|채용공고 목록|
 ||POST|채용공고 등록|
 ||GET|채용공고 상세정보|
@@ -38,6 +41,7 @@ etc - Docker & GithubAction <br>
 ||DEL|채용공고 삭제|
 
 |Application|||
+|---|---|---|
 ||GET|지원내역 목록|
 ||POST|지원 등록|
 ||GET|지원내역 상세정보|
