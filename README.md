@@ -14,6 +14,42 @@ DB - SQLite <br>
 etc - Docker & GithubAction <br>
 
 
+## API 명세서
+
+<!-- |Company|||
+|---|---|---|
+||GET|회사 목록|
+||POST|회사 등록|
+||GET|회사 상세정보|
+||PATCH|회사 상세정보 수정|
+||DEL|회사 삭제|
+
+|User|||
+|---|---|---|
+||GET|사용자 목록|
+||POST|사용자 등록|
+||GET|사용자 상세정보|
+||PATCH|사용자 상세정보 수정|
+||DEL|사용자 삭제| -->
+
+|Posting|||
+|---|---|---|
+||GET|채용공고 목록|
+||POST|채용공고 등록|
+||GET|채용공고 상세정보|
+||PATCH|채용공고 상세정보 수정|
+||DEL|채용공고 삭제|
+
+<!-- |Application|||
+|---|---|---|
+||GET|지원내역 목록|
+||POST|지원 등록|
+||GET|지원내역 상세정보|
+||PATCH|지원내역 수정|
+||DEL|지원내역 삭제| -->
+
+-----------
+
 ## 메인 페이지
 
 ![rest_01](https://user-images.githubusercontent.com/22446076/183009083-ecbca4b0-8e06-41a6-8c47-30f0e872e3dc.png)
