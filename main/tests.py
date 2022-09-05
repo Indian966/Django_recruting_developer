@@ -8,5 +8,6 @@ class CreatePostTestCase(TestCase) :
 
         pass
 
-    def test_post(self):
+    def test_PostList(self):
+
         pass

@@ -16,11 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from main.views import PostList, PostDetail, ApplyPost
+from pixel_converter import views as v2
+
 app_name = 'main'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('posts/', PostList, name='post_list'),
     path('posts/<int:pk>', PostDetail, name='post_detail'),
-    path('posts/<int:pk>/apply', ApplyPost, name='apply_post')
+    path('posts/<int:pk>/apply', ApplyPost, name='apply_post'),
+    path('pixelconverter/', v2)
 ]

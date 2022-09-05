@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pixel_converter/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pixel_converter/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pixel_converter/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pixel_converter/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pixel_converter/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pixel_converter/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pixel_converter/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/original.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pixel_converter/resource/DMC Cotton Floss converted to RGB Values.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/732b4e0e-763d-45b6-a79a-1ab3cfcc1bdc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/732b4e0e-763d-45b6-a79a-1ab3cfcc1bdc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_test/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_test/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,12 +73,21 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "C:/Users/user/Downloads/pixel_convert-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python\django_test\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python\django_test\static\pixel_converter" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,7 +177,12 @@
       <workItem from="1659503948543" duration="7035000" />
       <workItem from="1659592667468" duration="2925000" />
       <workItem from="1659675717906" duration="4996000" />
-      <workItem from="1661410699020" duration="2268000" />
+      <workItem from="1661410699020" duration="2303000" />
+      <workItem from="1661489910350" duration="620000" />
+      <workItem from="1661500767176" duration="73000" />
+      <workItem from="1661918954757" duration="2042000" />
+      <workItem from="1662001077880" duration="801000" />
+      <workItem from="1662354157146" duration="3519000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -338,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659681307609</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="test case 작성 시작">
+      <created>1661415459719</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1661415459719</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +388,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simple web page" />
     <MESSAGE value="index 수정" />
     <MESSAGE value="result_view.py&#10;result.html&#10;새로운 페이지 추가" />
     <MESSAGE value="models.py" />
@@ -371,6 +412,7 @@
     <MESSAGE value="serializers.py&#10;rest_framework상에서 동작" />
     <MESSAGE value="Delete Templates" />
     <MESSAGE value="DB new migration 필드명 수정&#10;serializers.py 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB new migration 필드명 수정&#10;serializers.py 수정" />
+    <MESSAGE value="test case 작성 시작" />
+    <option name="LAST_COMMIT_MESSAGE" value="test case 작성 시작" />
   </component>
 </project>

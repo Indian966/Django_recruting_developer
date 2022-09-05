@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Normal Image to Pixel Image">
+    <title>Pixel Image Converter</title>
+    <link href="static/pixel_converter/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/pixel_converter/css/original.css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-right">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">Pixel Image Converter</a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#info">설명</a></li>
+                <li><a href="https://github.com/Indian966/pixel_convert-master" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="modal fade in" id="info" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="modal-label">설명</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    이미지를 픽셀로 변환 후 색상 클러스터화하여 도트 그림처럼 보이게 합니다. <br>
+                </p>
+                <ul>
+                    <li>최대 2MB의 jpg, png 형식의 이미지만 지원됩니다.</li>
+                    <li>한 변이 1024px를 넘는 이미지는 자동으로 축소 변환됩니다.</li>
+                    <li><s>RGBA나 그레이스케일의 이미지도 변환되지만 출력시엔 RGB 형식으로 바뀝니다.<br>
+                        투과는 무시됩니다.</s></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <form action="./" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>이미지 최대 2MB</label>
+                    <input type="file" name="image" accept='image/png,image/jpeg'>
+                </div>
+                <div class="form-group">
+                    <div>색의갯수</div>
+                    <label class="radio-inline"><input name="k" type="radio" value="2">2</label>
+                    <label class="radio-inline"><input name="k" type="radio" value="4" checked>4</label>
+                    <label class="radio-inline"><input name="k" type="radio" value="6">6</label>
+                    <label class="radio-inline"><input name="k" type="radio" value="8">8</label>
+                    <label class="radio-inline"><input name="k" type="radio" value="24">24</label>
+                </div>
+                <div class="form-group">
+                    <div>도트크기</div>
+                    <label class="radio-inline"><input name="scale" type="radio" value="1">1</label>
+                    <label class="radio-inline"><input name="scale" type="radio" value="2" checked>2</label>
+                    <label class="radio-inline"><input name="scale" type="radio" value="3">3</label>
+                    <label class="radio-inline"><input name="scale" type="radio" value="4">4</label>
+                    <label class="radio-inline"><input name="scale" type="radio" value="8">8</label>
+                </div>
+                <div class="form-group">
+                    <div>블러처리</div>
+                    <label class="radio-inline"><input name="blur" type="radio" value="0" checked>없음</label>
+                    <label class="radio-inline"><input name="blur" type="radio" value="50">약</label>
+                    <label class="radio-inline"><input name="blur" type="radio" value="100">중</label>
+                    <label class="radio-inline"><input name="blur" type="radio" value="200">강</label>
+                </div>
+                <div class="form-group">
+                    <div>윤곽선 조정</div>
+                    <label class="radio-inline"><input name="erode" type="radio" value="0" checked>없음</label>
+                    <label class="radio-inline"><input name="erode" type="radio" value="1">약</label>
+                    <label class="radio-inline"><input name="erode" type="radio" value="2">강</label>
+                </div>
+                <div class="form-group">
+                    <label><input name="alpha" type="checkbox" value="1" checked>PNG파일로 출력</label>
+{#                    <label><input name="to_tw" type="checkbox" value="1" checked>Twitter用に1pxだけ透過</label>#}
+                </div>
+                <button type="submit" class="btn btn-primary">실행</button>
+            </form>
+            <div class="add-margin-top">
+                <a href="https://twitter.com/share" class="twitter-share-button"
+                   data-url="https://app.monopro.org/pixel/" data-text="도트변환" data-size="large"
+                   data-hashtags="도트변환">Tweet</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                </script>
+
+            </div>
+        </div>
+        {% if result %}
+        <div class="col-md-9 add-margin-top">
+            <ul class="nav nav-tabs">
+                <li class="nav-item active">
+                    <a href="#result" class="nav-link" data-toggle="tab">출력결과</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#original" class="nav-link" data-toggle="tab">원본</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="result" class="tab-pane active">
+                    <img class="img-responsive" src="{{ result }}">
+                    {% if colors %}
+                    <div class="add-margin-top">
+                        {% for color in colors %}
+                        <span class="label" style="background-color: black;">{{ color }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div id="original" class="tab-pane">
+                    <img class="img-responsive" src="{{ org_img }}">
+                </div>
+            </div>
+        </div>
+        {% else %}
+        {% endif %}
+        {% if error %}
+        <div class="modal fade in" id="alert" tabindex="-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            {{ error }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="static/pixel_converter/js/bootstrap.min.js"></script>
+{% if error %}
+<script>
+    $(document).ready(function (){
+        $('#alert').modal();
+    });
+</script>
+{% endif %}
+</body>
+</html>
