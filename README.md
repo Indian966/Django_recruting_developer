@@ -13,6 +13,11 @@ Front - html <br>
 DB - SQLite <br>
 etc - Docker & GithubAction <br>
 
+```
+현재 Flask에서 작성된 'pixel-converter' 마이그레이션 하는 작업 진행중
+```
+
+
 
 ## API 명세서
 
