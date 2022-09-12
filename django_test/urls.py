@@ -25,5 +25,5 @@ urlpatterns = [
     path('posts/', PostList, name='post_list'),
     path('posts/<int:pk>', PostDetail, name='post_detail'),
     path('posts/<int:pk>/apply', ApplyPost, name='apply_post'),
-    path('pixelconverter/', v2)
+    path('pixelconverter/', v2, app_name='pixel_converter')
 ]

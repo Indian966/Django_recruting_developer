@@ -5,31 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pixel_converter/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pixel_converter/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pixel_converter/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pixel_converter/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pixel_converter/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pixel_converter/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pixel_converter/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/css/original.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/resource/DMC Cotton Floss converted to RGB Values.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pixel_converter/code_converter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pixel_converter/pixel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_test/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_test/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixel_converter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixel_converter/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +162,9 @@
       <workItem from="1661500767176" duration="73000" />
       <workItem from="1661918954757" duration="2042000" />
       <workItem from="1662001077880" duration="801000" />
-      <workItem from="1662354157146" duration="3519000" />
+      <workItem from="1662354157146" duration="4448000" />
+      <workItem from="1662540464570" duration="596000" />
+      <workItem from="1662965414260" duration="1456000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -380,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661415459719</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="pixel_converter app 로직 등록&#10;static file 업로드, 경로 수정">
+      <created>1662364309368</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1662364309368</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +377,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="index 수정" />
     <MESSAGE value="result_view.py&#10;result.html&#10;새로운 페이지 추가" />
     <MESSAGE value="models.py" />
     <MESSAGE value="model 구조 추가&#10;db 연동&#10;새로운 view에 데이터 출력" />
@@ -413,6 +401,7 @@
     <MESSAGE value="Delete Templates" />
     <MESSAGE value="DB new migration 필드명 수정&#10;serializers.py 수정" />
     <MESSAGE value="test case 작성 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="test case 작성 시작" />
+    <MESSAGE value="pixel_converter app 로직 등록&#10;static file 업로드, 경로 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="pixel_converter app 로직 등록&#10;static file 업로드, 경로 수정" />
   </component>
 </project>
