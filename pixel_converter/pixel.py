@@ -3,7 +3,7 @@ import sys
 import cv2
 from PIL import Image
 import numpy as np
-import code_converter
+import pixel_converter.code_converter
 
 n8 = np.array([[1, 1, 1],
                [1, 1, 1],
