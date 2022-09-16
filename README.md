@@ -15,7 +15,7 @@ etc - Docker & GithubAction <br>
 
 ```
 2022.09.07
-현재 Flask에서 작성된 'pixel-converter'  마이그레이션 하는 작업 진행중
+현재 Flask에서 작성된 'pixel-converter'  이식하는 작업 진행중입니다.
 ```
 
 
