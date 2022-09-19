@@ -54,7 +54,7 @@ def index(request) :
                 img_pl.save(img_path)
 
         img_res, colors = make_dot(img_path_for_open, k=k, scale=scale, blur=blur, erode=erode, alpha=alpha, to_tw=to_tw)
-        cv2.imwrite(result_path, img_res)
+        cv2.imwrite(result_path_for_open, img_res)
         return render(request,'pixel.html', {'org_img':img_path_for_open, 'result' : result_path_for_open, 'colors' : colors})
 
 

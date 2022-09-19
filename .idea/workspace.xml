@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/5858034feca2f99d4d20542af0c11ddc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/6bb4524ed596284a669af6c9d33503dc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/b57fc727945063db0ac0973a07dbe765.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/cf9e02d7d35fe9ede2edfb030ec629fb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/9a5cb5b3e70e1d0a5683e29f67172ce3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/9e3b8af9387b032a6cff846cf191e52a.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixel_converter/pixel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixel_converter/pixel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixel_converter/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixel_converter/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pixel_converter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixel_converter/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +225,8 @@
       <workItem from="1662965414260" duration="2901000" />
       <workItem from="1663046741989" duration="4867000" />
       <workItem from="1663303429499" duration="1651000" />
-      <workItem from="1663476047745" duration="6427000" />
+      <workItem from="1663476047745" duration="6727000" />
+      <workItem from="1663568980957" duration="1361000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -462,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663316078419</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="request의 데이터 전달받기">
+      <created>1663484262351</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1663484262351</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +474,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="2개의 속성을 받아와서 &#10;db에 저장하고&#10;이걸 data_view에 보여줌" />
     <MESSAGE value="result_view.py에서 DB의 main 스키마를 보여줌" />
     <MESSAGE value="greet.html -&gt; new_post.html 변경&#10;회사의 채용 공고를 업로드 할 수 있는 페이지&#10;index.html 헤더 추가" />
     <MESSAGE value="models.py redesign" />
@@ -495,7 +498,8 @@
     <MESSAGE value="pixel.html view 연결&#10;static 경로 지정&#10;js 연동 확인" />
     <MESSAGE value="file 업로드&#10;media 경로 지정" />
     <MESSAGE value="index 테스트문 작성 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="index 테스트문 작성 중" />
+    <MESSAGE value="request의 데이터 전달받기" />
+    <option name="LAST_COMMIT_MESSAGE" value="request의 데이터 전달받기" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/django_test$.coverage" NAME=" Coverage Results" MODIFIED="1663478651663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pixel_converter" />
