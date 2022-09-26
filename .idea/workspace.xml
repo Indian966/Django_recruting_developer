@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/9a5cb5b3e70e1d0a5683e29f67172ce3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/9e3b8af9387b032a6cff846cf191e52a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/05b7a8d12a415e22bc623b5ffeb0da53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/5165db17343f5ade5aa86a466851b53e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/537034fb27aee753546e0dc96a12bcd3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/8412aca94da754d64ada6478204095c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/874b9b93e644b81ed8fc00fee9aa1286.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/b9f4ff6f3291cca866b9f8b021d2ecd3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/c299bce0e6d923c631d7b1589d3adb22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/d3ebcb8f6303ec164982a089d5c5b7bb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/e075532de57ff20dfb3e4f7d2b378dd4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/f2f65b776e93793fcef81a36dd5852ad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/5165db17343f5ade5aa86a466851b53e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/537034fb27aee753546e0dc96a12bcd3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/8412aca94da754d64ada6478204095c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/d3ebcb8f6303ec164982a089d5c5b7bb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/e075532de57ff20dfb3e4f7d2b378dd4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/f2f65b776e93793fcef81a36dd5852ad.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixel_converter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixel_converter/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_test/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixel_converter/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixel_converter/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +65,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Downloads/pixel_convert-master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "D:/Python/django_test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python\django_test\templates" />
@@ -226,7 +242,9 @@
       <workItem from="1663046741989" duration="4867000" />
       <workItem from="1663303429499" duration="1651000" />
       <workItem from="1663476047745" duration="6727000" />
-      <workItem from="1663568980957" duration="1361000" />
+      <workItem from="1663568980957" duration="1619000" />
+      <workItem from="1663741004674" duration="50000" />
+      <workItem from="1664170805812" duration="4200000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -466,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663484262351</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="image file 경로 확인 필요">
+      <created>1663573620151</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1663573620151</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="result_view.py에서 DB의 main 스키마를 보여줌" />
     <MESSAGE value="greet.html -&gt; new_post.html 변경&#10;회사의 채용 공고를 업로드 할 수 있는 페이지&#10;index.html 헤더 추가" />
     <MESSAGE value="models.py redesign" />
     <MESSAGE value="DB migration" />
@@ -499,7 +523,8 @@
     <MESSAGE value="file 업로드&#10;media 경로 지정" />
     <MESSAGE value="index 테스트문 작성 중" />
     <MESSAGE value="request의 데이터 전달받기" />
-    <option name="LAST_COMMIT_MESSAGE" value="request의 데이터 전달받기" />
+    <MESSAGE value="image file 경로 확인 필요" />
+    <option name="LAST_COMMIT_MESSAGE" value="image file 경로 확인 필요" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/django_test$.coverage" NAME=" Coverage Results" MODIFIED="1663478651663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pixel_converter" />

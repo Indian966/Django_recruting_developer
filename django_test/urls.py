@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from main.views import PostList, PostDetail, ApplyPost
 from pixel_converter import views as v2
+from django.conf.urls.static import static
+from django.conf import settings
 
 app_name = 'main'
 
@@ -27,3 +29,4 @@ urlpatterns = [
     path('posts/<int:pk>/apply', ApplyPost, name='apply_post'),
     path('pixelconverter/', v2.index, name='pixel_converter')
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
