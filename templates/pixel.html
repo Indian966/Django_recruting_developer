@@ -112,7 +112,7 @@
 
             </div>
         </div>
-        {% if result %}
+        {% if ImageModel %}
         <div class="col-md-9 add-margin-top">
             <ul class="nav nav-tabs">
                 <li class="nav-item active">
@@ -124,7 +124,8 @@
             </ul>
             <div class="tab-content">
                 <div id="result" class="tab-pane active">
-                    <img class="img-responsive" src="{{ result }}">
+
+                    <img class="img-responsive" src="{% ImageModel.result.urls %}" alt="sample">
                     {% if colors %}
                     <div class="add-margin-top">
                         {% for color in colors %}
@@ -134,7 +135,7 @@
                     {% endif %}
                 </div>
                 <div id="original" class="tab-pane">
-                    <img class="img-responsive" src="{{ org_img }}">
+                    <img class="img-responsive" src="{{ org_img.url }}">
                 </div>
             </div>
         </div>

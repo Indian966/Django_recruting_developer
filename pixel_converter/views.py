@@ -7,7 +7,7 @@ from PIL import Image
 import hashlib
 import datetime as dt
 from pixel_converter.pixel import make_dot
-
+from .models import ImageModel
 
 # Create your views here.
 
@@ -19,6 +19,7 @@ def index(request) :
 
     elif request.method == 'POST' :
         img = request.FILES['image']
+        img_obj = ImageModel()
 
         if not img:
             error='파일을 선택하십시오.'
@@ -43,19 +44,25 @@ def index(request) :
         img_path = os.path.join('pixel_converter\\img', img_name + os.path.splitext(img.name)[-1])
         result_path = os.path.join('pixel_converter\\results', img_name + '.png')
 
+        # 파일시스템으로 저장
         fs = FileSystemStorage()
         fs.save(img_path, img)
+
         img_path_for_open = 'media\\'+ img_path
         result_path_for_open = 'media\\' + result_path
 
         with Image.open(img_path_for_open) as img_pl:
             if max(img_pl.size) > 1024:
                 img_pl.thumbnail((1024, 1024), Image.ANTIALIAS)
-                img_pl.save(img_path)
+                # img_pl.save(img_path)
+                # 모델로 저장
+                img_obj.org_image = img_pl
 
         img_res, colors = make_dot(img_path_for_open, k=k, scale=scale, blur=blur, erode=erode, alpha=alpha, to_tw=to_tw)
-        cv2.imwrite(result_path_for_open, img_res)
-        return render(request,'pixel.html', {'org_img':img_path_for_open, 'result' : result_path_for_open, 'colors' : colors})
+        # img_obj.result = cv2.imwrite(result_path_for_open, img_res)
+        # img_obj.result = cv2.imwrite(result_path_for_open, img_res)
+        img_obj.save()
+        return render(request,'pixel.html', {'colors' : colors})
 
 
 # def post(request):
