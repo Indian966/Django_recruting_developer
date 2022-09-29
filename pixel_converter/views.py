@@ -63,7 +63,7 @@ def index(request) :
         # img_obj.result = cv2.imwrite(result_path_for_open, img_res)
         # img_obj.result = img_res
         # img_obj.save()
-        return render(request,'pixel.html', {'org_image' : img, 'result' : img_res,'colors' : colors})
+        return render(request,'pixel.html', {'org_image' : img, 'result' : img,'colors' : colors})
 
 
 # def post(request):
