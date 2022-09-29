@@ -5,49 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31496f62-49d2-4520-a967-f5c4cfa5c25c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/12ebc2b7ca58626c03c26475ef574e3e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/162b4da27fe96cdb5100a46fdff4fd70.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/209b290e155d4e5c219952994db1155a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/4266982f2ae51d81434866e20beed487.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/53a44a7a094ae6b6ae7ce85d34278ca8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/5aa16f26a8ef3f9951b1feca0b4378a5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/757df984460dc8f7051cbf72641f5d59.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/76266434f9282e357cb6a3833d2dfb44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/790c5bcd6435398f41d9a39e68a48fc6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/8c3085277c2af801c16017f25831d898.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/9b6d086ebc7850ed960410a7b5127173.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/a295b0e7cafaa6be2042a992e263264b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/b043b69116a2f2670b8a20a91a8fad79.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/c3a03e24b0e94f3deaa2cb40c86ae980.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/cf1c48022203195271b3d91845927cbf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/d03b22d9d69d23997e678c6925ff9131.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/d1eabfa24689bd3f209e3f73a8b37a74.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/f0b68036b1d700be45341c2d0e00ed93.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/f33b4e934106ea51630f586983785d50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/f52a9912d3b2d790f5d8db46b7364665.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/f56c6863c5f9d9512bbfc004daa6639e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/12ebc2b7ca58626c03c26475ef574e3e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/162b4da27fe96cdb5100a46fdff4fd70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/209b290e155d4e5c219952994db1155a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/4266982f2ae51d81434866e20beed487.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/53a44a7a094ae6b6ae7ce85d34278ca8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/5aa16f26a8ef3f9951b1feca0b4378a5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/757df984460dc8f7051cbf72641f5d59.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/76266434f9282e357cb6a3833d2dfb44.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/790c5bcd6435398f41d9a39e68a48fc6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/8c3085277c2af801c16017f25831d898.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/9b6d086ebc7850ed960410a7b5127173.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/a295b0e7cafaa6be2042a992e263264b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/b043b69116a2f2670b8a20a91a8fad79.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/c3a03e24b0e94f3deaa2cb40c86ae980.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/cf1c48022203195271b3d91845927cbf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/d03b22d9d69d23997e678c6925ff9131.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/d1eabfa24689bd3f209e3f73a8b37a74.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/f0b68036b1d700be45341c2d0e00ed93.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/f33b4e934106ea51630f586983785d50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/f52a9912d3b2d790f5d8db46b7364665.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pixel_converter/results/f56c6863c5f9d9512bbfc004daa6639e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pixel_converter/img/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/2ef5efa7546bb95c03e15fb3bc7a13b3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/3bbd67786222fe74da5809b0805b62d0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/47df55c80843f1ab9dec726eacfe2705.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/7106ec5ca25831efe67051f3adf2c035.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/pixel_converter/img/d29c12d19a4cbc6aa426d03243a6f64a.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pixel_converter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixel_converter/views.py" afterDir="false" />
@@ -92,16 +54,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "D:/Python/django_test/static/pixel_converter/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python/django_test/static/pixel_converter/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python\django_test\static\pixel_converter\img" />
@@ -273,7 +235,8 @@
       <workItem from="1663568980957" duration="1619000" />
       <workItem from="1663741004674" duration="50000" />
       <workItem from="1664170805812" duration="4413000" />
-      <workItem from="1664259593659" duration="7276000" />
+      <workItem from="1664259593659" duration="7492000" />
+      <workItem from="1664432703862" duration="2109000" />
     </task>
     <task id="LOCAL-00001" summary="simple web page">
       <created>1654226474964</created>
@@ -527,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664178380533</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="media file 저장하기 위해 model 생성">
+      <created>1664276270904</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1664276270904</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

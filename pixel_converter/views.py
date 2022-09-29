@@ -19,7 +19,7 @@ def index(request) :
 
     elif request.method == 'POST' :
         img = request.FILES['image']
-        img_obj = ImageModel()
+        img_obj = ImageModel.objects
 
         if not img:
             error='파일을 선택하십시오.'
@@ -61,8 +61,9 @@ def index(request) :
         img_res, colors = make_dot(img_path_for_open, k=k, scale=scale, blur=blur, erode=erode, alpha=alpha, to_tw=to_tw)
         # img_obj.result = cv2.imwrite(result_path_for_open, img_res)
         # img_obj.result = cv2.imwrite(result_path_for_open, img_res)
-        img_obj.save()
-        return render(request,'pixel.html', {'colors' : colors})
+        # img_obj.result = img_res
+        # img_obj.save()
+        return render(request,'pixel.html', {'org_image' : img, 'result' : img_res,'colors' : colors})
 
 
 # def post(request):
