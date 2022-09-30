@@ -19,8 +19,9 @@ def index(request) :
 
     elif request.method == 'POST' :
         img = request.FILES['image']
-        img_obj = ImageModel.objects
-
+        img_obj = ImageModel()
+        img_obj.org_image = img
+        img_obj.save()
         if not img:
             error='파일을 선택하십시오.'
             return render('pixel.html', error=error)
@@ -51,19 +52,23 @@ def index(request) :
         img_path_for_open = 'media\\'+ img_path
         result_path_for_open = 'media\\' + result_path
 
-        with Image.open(img_path_for_open) as img_pl:
-            if max(img_pl.size) > 1024:
-                img_pl.thumbnail((1024, 1024), Image.ANTIALIAS)
+        # with Image.open(img_path_for_open) as img_pl:
+        #     if max(img_pl.size) > 1024:
+        #         img_pl.thumbnail((1024, 1024), Image.ANTIALIAS)
                 # img_pl.save(img_path)
                 # 모델로 저장
-                img_obj.org_image = img_pl
+                # img_obj.org_image = img_pl
 
         img_res, colors = make_dot(img_path_for_open, k=k, scale=scale, blur=blur, erode=erode, alpha=alpha, to_tw=to_tw)
         # img_obj.result = cv2.imwrite(result_path_for_open, img_res)
         # img_obj.result = cv2.imwrite(result_path_for_open, img_res)
         # img_obj.result = img_res
         # img_obj.save()
-        return render(request,'pixel.html', {'org_image' : img, 'result' : img,'colors' : colors})
+
+        show_obj = ImageModel.objects.first()
+        # 'result' : img,'colors' : colors
+        print(show_obj)
+        return render(request,'pixel.html', {'img_obj' : show_obj})
 
 
 # def post(request):
